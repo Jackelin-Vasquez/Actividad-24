@@ -35,6 +35,21 @@ def fibonacci(numero):
     else:
         return fibonacci(numero -1) + fibonacci(numero -2)
 
+def contar_letra(palabra,letra):
+    if palabra =="":
+        return "ingrese una palabra!"
+    else:
+        if palabra[0] == letra:
+            return 1 + contar_letra(palabra,letra)
+        else:
+            return contar_letra(palabra,letra)
+
+palabra= input("Ingrese una palabra:")
+letra= input("Ingrese letra a buscar:")
+print(contar_letra(palabra,letra))
+
+
+
 numero= int(input("INgrese un numero:"))
 print(fibonacci(numero))
 
