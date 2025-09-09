@@ -17,7 +17,7 @@ def factorial(numero):
         return numero * factorial(numero-1)
 
 def suma(numero):
-    if numero ==0 or numero ==1:
+    if numero ==1:
         return 1
     else:
         numero= numero
