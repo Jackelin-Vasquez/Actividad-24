@@ -44,7 +44,7 @@ def contar_letra(palabra,letra):
 
 def invertir_cadena(cadena_texto, contador=0):
     if contador == len(cadena_texto):
-        return ""
+        return "texto invertido:"
     else:
         return invertir_cadena(cadena_texto, contador +1) + cadena_texto[contador]
 
@@ -52,7 +52,7 @@ def potencia(base,exponente):
     if exponente ==0:
         return 1
     else:
-        return potencia(base,exponente -1)
+        return base * potencia(base,exponente -1)
 
 
 #programa principal
@@ -80,7 +80,7 @@ while True:
         case "5":
             print("Invertir cadena de texto")
             texto= input("Ingrese cadena de texto:")
-            print(f"el texto invertido es:{invertir_cadena(texto)}")
+            print(invertir_cadena(texto))
         case "6":
             print("Calular potencia de numero")
             numero= int(input("Ingrese numero:"))
