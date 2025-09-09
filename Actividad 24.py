@@ -23,8 +23,6 @@ def suma(numero):
         numero= numero
         return numero + suma(numero-1)
 
-numero= int(input("INgrese un numero:"))
-print(suma(numero))
 
 
 def fibonacci(numero):
@@ -44,9 +42,6 @@ def contar_letra(palabra,letra):
         else:
             return contar_letra(palabra[1:],letra)
 
-palabra= input("Ingrese una palabra:")
-letra= input("Ingrese letra a buscar:")
-print(contar_letra(palabra,letra))
 
 def invertir_cadena(cadena_texto, contador=0):
     if contador == len(cadena_texto):
@@ -61,23 +56,40 @@ def potencia(base,exponente):
         return potencia(base,exponente -1)
 
 
-
-
-numero= int(input("INgrese un numero:"))
-print(fibonacci(numero))
-
-"""""
 #programa principal
-menu()
-opcion= input("Ingrese una opcion:")
-match opcion:
-    case "1":
-        print("Factorial de numero")
-        numero=int(input("Ingrese un numero:"))
-        factorial(numero)
-    case "2":
-        print("Suma hasta n numero")
-        numero= int(input("Ingrese un numero:"))
-        suma(numero)
-        
-        """""
+while True:
+    menu()
+    opcion= input("Ingrese una opcion:")
+    match opcion:
+        case "1":
+            print("Factorial de numero")
+            numero=int(input("Ingrese un numero:"))
+            print(factorial(numero))
+        case "2":
+            print("Suma hasta n numero")
+            numero= int(input("Ingrese un numero:"))
+            print(suma(numero))
+        case "3":
+            print("Calculo Número Fibonacci")
+            numero= int(input("Ingrese numero a calcular:"))
+            print(fibonacci(numero))
+        case "4":
+            print("Contador de apariciones de letra en palabra")
+            palabra= input("Ingrese palabra:")
+            letra : input("Ingrese letr a buscar:")
+            print(contar_letra(palabra,letra))
+        case "5":
+            print("Invertir cadena de texto")
+            texto= input("Ingrese cadena de texto:")
+            print(invertir_cadena(texto))
+        case "6":
+            print("Calular potencia de numero")
+            numero= int(input("Ingrese numero:"))
+            potencia: int(input("Ingrese potencia de numero:"))
+            potencia(numero,potencia())
+        case "7":
+            print("Saliendo....")
+        case _:
+            print("Opcion no valida...")
+            break
+
