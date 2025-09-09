@@ -21,7 +21,11 @@ def suma(numero):
         return 1
     else:
         numero= numero
-        return numero + suma(numero)
+        return numero + suma(numero-1)
+
+numero= int(input("INgrese un numero:"))
+print(suma(numero))
+
 
 def fibonacci(numero):
     if numero == 0:
