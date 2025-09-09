@@ -37,7 +37,7 @@ def fibonacci(numero):
 
 def contar_letra(palabra,letra):
     if palabra =="":
-        return "ingrese una palabra!"
+        return 0
     else:
         if palabra[0] == letra:
             return 1 + contar_letra(palabra[1:],letra)
