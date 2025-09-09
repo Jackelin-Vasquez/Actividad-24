@@ -24,10 +24,13 @@ def suma(numero):
         return numero + suma(numero)
 
 def fibonacci(numero):
-    pass
+    if numero == 0 or numero ==1:
+        return 1
+    else:
+        return fibonacci(numero -1) + fibonacci(numero -2)
 
 numero= int(input("INgrese un numero:"))
-print(suma(numero))
+print(fibonacci(numero))
 
 """""
 #programa principal
