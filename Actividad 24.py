@@ -24,7 +24,6 @@ def suma(numero):
         return numero + suma(numero-1)
 
 
-
 def fibonacci(numero):
     if numero == 0:
         return 0
@@ -64,29 +63,29 @@ while True:
         case "1":
             print("Factorial de numero")
             numero=int(input("Ingrese un numero:"))
-            print(factorial(numero))
+            print(f"el factorial del numero {numero} es {factorial(numero)}")
         case "2":
             print("Suma hasta n numero")
             numero= int(input("Ingrese un numero:"))
-            print(suma(numero))
+            print(f"la suma desde 1 hasta {numero} es {suma(numero)}")
         case "3":
             print("Calculo Número Fibonacci")
             numero= int(input("Ingrese numero a calcular:"))
-            print(fibonacci(numero))
+            print(f"el calculo fibonacci del numero {numero} es {fibonacci(numero)}")
         case "4":
             print("Contador de apariciones de letra en palabra")
             palabra= input("Ingrese palabra:")
             letra = input("Ingrese letr a buscar:")
-            print(contar_letra(palabra,letra))
+            print(f"la letra {letra} apararece {contar_letra(palabra,letra)} veces en la palabra {palabra}")
         case "5":
             print("Invertir cadena de texto")
             texto= input("Ingrese cadena de texto:")
-            print(invertir_cadena(texto))
+            print(f"el texto invertido es:{invertir_cadena(texto)}")
         case "6":
             print("Calular potencia de numero")
             numero= int(input("Ingrese numero:"))
             pote= int(input("Ingrese potencia de numero:"))
-            print(potencia(numero,pote))
+            print(f"el numero {numero} elevado a {pote} es: {potencia(numero,pote)}")
         case "7":
             print("Saliendo....")
         case _:
