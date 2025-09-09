@@ -76,7 +76,7 @@ while True:
         case "4":
             print("Contador de apariciones de letra en palabra")
             palabra= input("Ingrese palabra:")
-            letra : input("Ingrese letr a buscar:")
+            letra = input("Ingrese letr a buscar:")
             print(contar_letra(palabra,letra))
         case "5":
             print("Invertir cadena de texto")
@@ -85,8 +85,8 @@ while True:
         case "6":
             print("Calular potencia de numero")
             numero= int(input("Ingrese numero:"))
-            potencia: int(input("Ingrese potencia de numero:"))
-            potencia(numero,potencia())
+            pote= int(input("Ingrese potencia de numero:"))
+            print(potencia(numero,pote))
         case "7":
             print("Saliendo....")
         case _:
