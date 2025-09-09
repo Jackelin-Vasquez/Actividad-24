@@ -48,6 +48,14 @@ palabra= input("Ingrese una palabra:")
 letra= input("Ingrese letra a buscar:")
 print(contar_letra(palabra,letra))
 
+def invertir_cadena(cadena_texto, contador=0):
+    if contador == len(cadena_texto):
+        return ""
+    else:
+        return invertir_cadena(cadena_texto, contador +1) + cadena_texto[contador]
+
+print(invertir_cadena("cerdo volador"))
+
 
 
 numero= int(input("INgrese un numero:"))
