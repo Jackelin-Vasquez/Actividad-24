@@ -54,7 +54,12 @@ def invertir_cadena(cadena_texto, contador=0):
     else:
         return invertir_cadena(cadena_texto, contador +1) + cadena_texto[contador]
 
-print(invertir_cadena("cerdo volador"))
+def potencia(base,exponente):
+    if exponente ==0:
+        return 1
+    else:
+        return potencia(base,exponente -1)
+
 
 
 
