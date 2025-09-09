@@ -40,9 +40,9 @@ def contar_letra(palabra,letra):
         return "ingrese una palabra!"
     else:
         if palabra[0] == letra:
-            return 1 + contar_letra(palabra,letra)
+            return 1 + contar_letra(palabra[1:],letra)
         else:
-            return contar_letra(palabra,letra)
+            return contar_letra(palabra[1:],letra)
 
 palabra= input("Ingrese una palabra:")
 letra= input("Ingrese letra a buscar:")
